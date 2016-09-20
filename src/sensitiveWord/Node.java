@@ -18,7 +18,8 @@ public class Node {
 	public Node insert(char ch) {
 		String key = String.valueOf(ch);
 		Node n = new Node();
-		return has.put(key, n);
+		has.put(key, n);
+		return n;
 	}
 	
 	public Node find (String ch) {
